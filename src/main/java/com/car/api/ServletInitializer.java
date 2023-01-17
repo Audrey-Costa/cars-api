@@ -1,4 +1,4 @@
-package com.car.car;
+package com.car.api;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

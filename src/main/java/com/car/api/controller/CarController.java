@@ -1,6 +1,7 @@
 package com.car.api.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -29,6 +30,11 @@ public class CarController {
   @GetMapping
   public List<Car> listAll() {
     return service.findAll();
+  }
+
+  @GetMapping("/{id}")
+  public Optional<Car> ListCarById(@PathVariable Long id) {
+    return service.findCarById(id);
   }
 
   @PostMapping

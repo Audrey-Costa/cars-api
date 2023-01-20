@@ -1,5 +1,8 @@
 package com.car.api.model;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
 import com.car.api.dto.CarDTO;
 
 import jakarta.persistence.Column;
@@ -34,10 +37,10 @@ public class Car {
   private String fabricante; 
   
   @Column(length = 40, nullable = false)
-  private String dataFabricacao; 
+  private Date dataFabricacao; 
 
   @Column(nullable = false)
-  private Double valor;
+  private BigDecimal valor;
 
   @Column(nullable = false)
   private int anoModelo;
